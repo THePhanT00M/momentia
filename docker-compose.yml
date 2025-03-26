@@ -1,0 +1,21 @@
+version: '3'
+services:
+    web:
+        image: yuminji97/nginx-php8-fpm-by-ym
+        expose:
+            - "80"
+            - "443"
+        container_name: momentia
+        networks:
+            - conects-network
+        environment:
+            - WEBROOT=/var/www/html/public
+            - _IS_DEV=TRUE
+            - _IS_QA=FALSE
+            - _IS_SG=FALSE
+            - VIRTUAL_HOST=dev-momentia.conects.com
+        volumes:
+            - .:/var/www/html
+networks:
+    conects-network:
+        external: true
