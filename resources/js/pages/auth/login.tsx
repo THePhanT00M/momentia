@@ -35,6 +35,8 @@ export default function Login({ status, canResetPassword }: LoginProps) {
         });
     };
 
+    console.log(route('password.request'))
+
     return (
         <AuthLayout title="Log in to your account" description="Enter your email and password below to log in">
             <Head title="Log in" />

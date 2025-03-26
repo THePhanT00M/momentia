@@ -22,4 +22,17 @@ export default defineConfig({
             'ziggy-js': resolve(__dirname, 'vendor/tightenco/ziggy'),
         },
     },
+    server: {
+        host: 'dev-momentia.conects.com', // 혹은 0.0.0.0
+        port: 5173,
+        https: {
+            key: './storage/app/private/certs/STAR.conects.com_key.pem',
+            cert: './storage/app/private/certs/STAR.conects.com_crt.pem',
+        },
+
+        // CORS 허용
+        cors: {
+            origin: '*',
+        },
+    },
 });

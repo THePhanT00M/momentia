@@ -4,7 +4,12 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('welcome');
+    if (auth()->check()) {
+        // 사용자가 로그인한 경우 main 컴포넌트를 렌더링
+        return Inertia::render('main');
+    }
+    // 로그인하지 않은 경우 Welcome 컴포넌트를 렌더링
+    return Inertia::render('auth/login');
 })->name('home');
 
 Route::middleware(['auth', 'verified'])->group(function () {
