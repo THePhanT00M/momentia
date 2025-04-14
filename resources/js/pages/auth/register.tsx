@@ -34,14 +34,13 @@ export default function Register() {
     return (
         <AuthLayout title="Momentia 계정 생성" description="친구들의 사진과 동영상을 보려면 가입하세요.">
             <Head title="가입하기" />
-            <form className="flex flex-col gap-6" onSubmit={submit}>
+            <form className="flex flex-col gap-6" onSubmit={submit} noValidate>
                 <div className="grid gap-6">
                     <div className="grid gap-2">
                         <Label htmlFor="name">성명</Label>
                         <Input
                             id="name"
                             type="text"
-                            required
                             autoFocus
                             tabIndex={1}
                             autoComplete="name"
@@ -58,7 +57,6 @@ export default function Register() {
                         <Input
                             id="email"
                             type="email"
-                            required
                             tabIndex={2}
                             autoComplete="email"
                             value={data.email}
@@ -74,7 +72,6 @@ export default function Register() {
                         <Input
                             id="password"
                             type="password"
-                            required
                             tabIndex={3}
                             autoComplete="new-password"
                             value={data.password}
@@ -90,7 +87,6 @@ export default function Register() {
                         <Input
                             id="password_confirmation"
                             type="password"
-                            required
                             tabIndex={4}
                             autoComplete="new-password"
                             value={data.password_confirmation}
