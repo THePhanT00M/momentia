@@ -15,7 +15,7 @@ const LogoText = styled.h1`
 export default function AppLogo() {
     return (
         <>
-            <div className="ml-1 grid flex-1 text-left">
+            <div className="grid flex-1 text-left">
                 <span className="mb-0.5 truncate leading-none font-semibold">
                      <LogoText>Momentia</LogoText>
                 </span>
