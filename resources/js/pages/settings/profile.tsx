@@ -46,7 +46,7 @@ export default function Profile({ mustVerifyEmail, status }: { mustVerifyEmail: 
 
             <SettingsLayout>
                 <div className="space-y-6">
-                    <HeadingSmall title="Profile information" description="Update your name and email address" />
+                    <HeadingSmall title="내정보" description="성명과 이메일 업데이트" />
 
                     <form onSubmit={submit} className="space-y-6">
                         <div className="grid gap-2">

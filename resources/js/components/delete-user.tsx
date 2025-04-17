@@ -32,11 +32,11 @@ export default function DeleteUser() {
 
     return (
         <div className="space-y-6">
-            <HeadingSmall title="계정 삭제" description="Delete your account and all of its resources" />
+            <HeadingSmall title="계정 삭제" description="계정 및 모든 리소스 삭제" />
             <div className="space-y-4 rounded-lg border border-red-100 bg-red-50 p-4 dark:border-red-200/10 dark:bg-red-700/10">
                 <div className="relative space-y-0.5 text-red-600 dark:text-red-100">
                     <p className="font-medium">경고</p>
-                    <p className="text-sm">Please proceed with caution, this cannot be undone.</p>
+                    <p className="text-sm">주의해서 진행해 주세요. 이 작업은 취소할 수 없습니다.</p>
                 </div>
 
                 <Dialog>
