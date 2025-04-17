@@ -7,9 +7,9 @@ export default function AppearanceToggleTab({ className = '', ...props }: HTMLAt
     const { appearance, updateAppearance } = useAppearance();
 
     const tabs: { value: Appearance; icon: LucideIcon; label: string }[] = [
-        { value: 'light', icon: Sun, label: 'Light' },
-        { value: 'dark', icon: Moon, label: 'Dark' },
-        { value: 'system', icon: Monitor, label: 'System' },
+        { value: 'light', icon: Sun, label: '밝은 테마' },
+        { value: 'dark', icon: Moon, label: '어두운 테마' },
+        { value: 'system', icon: Monitor, label: '기기 테마 사용' },
     ];
 
     return (
