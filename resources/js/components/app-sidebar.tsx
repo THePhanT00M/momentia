@@ -4,19 +4,34 @@ import { NavUser } from '@/components/nav-user';
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid, House } from 'lucide-react';
+import { Home, Search, Compass, Film, Send} from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
     {
         title: '홈',
         href: '/',
-        icon: House,
+        icon: Home,
     },
     {
-        title: 'Dashboard1',
-        href: '/dashboard1',
-        icon: LayoutGrid,
+        title: '검색',
+        href: '/Search',
+        icon: Search,
+    },
+    {
+        title: '탐색',
+        href: '/explore',
+        icon: Compass,
+    },
+    {
+        title: '릴스',
+        href: '/movies',
+        icon: Film,
+    },
+    {
+        title: '메세지',
+        href: '/send',
+        icon: Send,
     },
 ];
 
